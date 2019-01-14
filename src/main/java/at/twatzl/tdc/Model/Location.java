@@ -2,10 +2,10 @@ package at.twatzl.tdc.Model;
 
 public class Location {
 
-	int latitude;
-	int longitude;
+	public double latitude;
+	public double longitude;
 
-	public Location(int latitude, int longitude) {
+	public Location(double latitude, double longitude) {
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
