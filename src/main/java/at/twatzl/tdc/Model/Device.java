@@ -20,29 +20,18 @@ public abstract class Device {
 		this.displayName = displayName;
 	}
 
+	/**
+	 * Update is called regularly to allow to update device status and values.
+	 */
 	public abstract void update();
 
+	/**
+	 * Establish a connection to the hardware device.
+	 */
 	public abstract void connect();
 
+	/**
+	 * Send a shutdown signal to the device.
+	 */
 	public abstract void shutdown();
-
-	public Date getLastInspectionDate() {
-		return lastInspectionDate;
-	}
-
-	public int getDeviceId() {
-		return deviceId;
-	}
-
-	public Location getLocation() {
-		return location;
-	}
-
-	public DeviceStatus getStatus() {
-		return status;
-	}
-
-	public String getDisplayName() {
-		return displayName;
-	}
 }

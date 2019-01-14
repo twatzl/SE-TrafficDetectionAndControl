@@ -12,6 +12,10 @@ public abstract class Sensor extends Device {
 		super(lastInspectionDate, deviceId, location, status, displayName);
 	}
 
+	/**
+	 * Retrieve all events from the sensor
+	 * @return
+	 */
 	public abstract List<SensorData> getSensorData();
 
 }
